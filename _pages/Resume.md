@@ -1,4 +1,5 @@
 ---
+title: ""
 layout: single
 permalink: /resume/
 excerpt: Data Scientist - Physicist - Bicycle Tourist
