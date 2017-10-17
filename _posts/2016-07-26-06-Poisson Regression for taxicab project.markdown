@@ -46,9 +46,9 @@ In order to build this regression method, we'll start with what we know: the Poi
 where \\(y\\) is the sample, and \\(\lambda\\) is the mean.
 For our model, we're going to assume that the mean is some function of the independent variables \\(\mathbf{x}\\) and the parameters that we're going to fit, \\(\boldsymbol{\theta}\\).
 Using this, the probability of finding the data point \\( y_i \\) given values for the independent variables \\(\mathbf{x}_i\\) is
-$$p\left(y_i|\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)\right) = \frac{\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)^{y_i} e^{-\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)}}{y_i !}$$
+\\[p\left(y_i|\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)\right) = \frac{\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)^{y_i} e^{-\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)}}{y_i !}\\]
 Then, the probability of getting all the data is just the product of all the data probabilities multiplied together.
-$$L(y_i,\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)) = \prod_{i=0}^N \frac{\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)^{y_i} e^{-\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)}}{y_i !}$$
+\\[L(y_i,\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)) = \prod_{i=0}^N \frac{\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)^{y_i} e^{-\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)}}{y_i !}\\]
 This function is called the *likelihood function*.
 Our regression method will simply find the values of the parameters \\(\boldsymbol{\theta}\\) that maximize this likelihood function.
 These parameters will be the parameters under which our data is the most probable.
@@ -58,7 +58,7 @@ We can make our lives easier by taking the logarithm of both sides.
 Since \\(a > b \implies \log (a) > \log (b)\\), the values of \\(\boldsymbol{\theta}\\) that maximize the  log of the likelihood - called the *log-likelihood* - will also maximize the likelihood itself.
 
 Taking the log of the likelihood gives us a summation to minimize instead of a product:
-$$\log(L(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right))) = l(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right)) = \sum_{i=0}^N y_i \log(\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)) - \lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right) - \log(y_i !)$$
+\\[\log(L(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right))) = l(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right)) = \sum_{i=0}^N y_i \log(\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)) - \lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right) - \log(y_i !)\\]
 Finding the maximum of \\(l(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right))\\) is still not super easy.
 In practice, we're going to have a computer find the maximum for us.
 There are a bunch of different algorithms we could use, as *optimization* problems like these are very common.
@@ -70,16 +70,16 @@ We noticed before that things looked linear when we looked at the log of the per
 Taking the log is actually the most common choice for count data.
 As logs can't go negative, we won't make negative predictions for counts which don't make sense.
 We'll assume that the log of per-capita counts behaves linearly, so
-$$ \log \left(\frac{\lambda_i}{c_i}\right) = \boldsymbol{\theta} \cdot \mathbf{x}_i + k,$$
+\\[ \log \left(\frac{\lambda_i}{c_i}\right) = \boldsymbol{\theta} \cdot \mathbf{x}_i + k,\\]
 where \\(c_i\\) is the population for the \\(i\\)-th census tract, \\(\frac{\lambda_i}{c_i}\\) is the drop offs per-capita, and \\(k\\) is a constant.
 The functional form for \\(\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)\\) is then
-$$
+\\[
 \lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right) = c_i \exp(\boldsymbol{\theta} \cdot \mathbf{x}_i + k).
-$$
+\\]
  We can plug this into our log-likelihood to get the log-likelihood of our specific model,
-$$
+\\[
 l(y,\mathbf{x},\boldsymbol{\theta}) = \sum_{i=0}^N y_i \left[\boldsymbol{\theta} \cdot \mathbf{x}_i + k + \log\left(c_i\right) \right]  -c_i \exp(\boldsymbol{\theta} \cdot \mathbf{x}_i + k)  - \log(y_i !)
-$$
+\\]
 
 
 ## Fit it!
@@ -93,17 +93,17 @@ Since the variance of a Poisson distribution is equal to the mean, we'd expect t
 A better approach is to come up with some quantities from the likelihood function we calculated.
 We can compare the likelihood we got to the likelihood we would get with a similar model that gets the means exactly on the data.
 We look at the ratio of the squares of the two likelihoods,
-$$
+\\[
 \left[\frac{L(y,y)}{L(y,\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right))}\right]^2
-$$
+\\]
 Since we're usually working with the log-likelihood, we'll take the logs and look at that:
-$$
+\\[
 D(y, \lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right))) = 2 l(y,y) - 2 l (y, \lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right))).
-$$
+\\]
 This is called the *deviance*. Conceptually, it represents a sort of distance between the perfect model and the model we're testing.
 It also will be drawn from a \\(\chi^2\\) distribution and we can derive p-values from it.
 
-For the model I created of the taxi cabs, we find a deviance of \\(2 \times 10^8$$, which gives a p-value of 0.
+For the model I created of the taxi cabs, we find a deviance of \\(2 \times 10^8\\[, which gives a p-value of 0.
 Note that this p-value is a bit different from the most common set up. Since the perfect model is the more complex of the two models, our model is in the place of the null hypothesis.
 This seems pretty disastrous for our model.
 
@@ -125,16 +125,16 @@ Instead, we create a model that doesn't have a real distribution behind it at al
 It's just something that looks a lot like a Poisson regression, except for the larger variance.
 This is done by modifying the log-likelihood that we created for Poisson regression.
 The log-likelihood we create - called a *quasi-log-likelihood* - is
-$$
+\\]
 l(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right)) = \sum_{i=0}^N \frac{y_i \log(\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)) - \lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)}{\sigma^2}
-$$
+\\[
 \\(\sigma^2\\) is the factor by which our variance is increased, called the *dispersion parameter*.
 This model is called a *quasi-Poisson regression*.
 If you compare this quasi-log-likelihood to the true Poisson regression log-likelihood, you'll notice that they're pretty similar.
 As far as finding the parameters \\(\boldsymbol{\theta}\\) go, they are identical, as for both,
-$$
+\\]
 \frac{\partial l(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right))}{\partial \boldsymbol{\theta}} = \mathbf{0} \implies \sum_{i=0}^N \left[ \frac{y_i}{\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)} - 1 \right] \frac{\partial \lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)}{\partial \boldsymbol{\theta}} = \mathbf{0}.
-$$
+\\[
 
 Thus, the model for the mean will be identical for both models.
 However, with a scaling factor on the log-likelihood, the random part of the quasi-Poisson model has a larger variance than the ordinary Poisson, so things like p-values and the confidence intervals will be changed.
@@ -156,9 +156,9 @@ But we can't do the same with a Poisson distribution.
 Since the Poisson distribution changes with the mean, each residual is drawn from a different distribution.
 We can get around this by transforming the residuals such that they should follow a normal distribution, if they actually are following our model.
 For Poisson regression, these *Anscombe residuals* are given by
-$$
+\\]
 r_A = \frac{3\left(y^{2/3} - \lambda ^{2/3}\right)}{2\lambda^{1/6}}.
-$$
+\\]
 ![QQ-plot]({{ "img/2013quasi-poisson_QQ.png" | absolute_url }})
 We can compute these residuals for our data, and see if they follow the normal distribution as predicted.
 Unsurprisingly, given the fact that we had to dramatically adjust our variance, the distribution isn't that close to normal.
@@ -171,9 +171,9 @@ We'd like a value that give a measure of explained variance vs a model that just
 There are a couple of ways to do this, none of which cover all the bases that \\(R^2\\) does.
 I'm going to focus on one that gives a good measure of explained variance.
 It's built on the log-likelihood we already computed, and is given by
-$$
+\\[
 R^2 = 1- \frac{l(y, \lambda(\mathbf{x},\boldsymbol{\theta}))}{l(y,\bar{y})}.
-$$
+\\]
 In this equation, \\(l(y,\bar{y})\\) represents the log-likelihood of the null model, where all data points are assumed to be drawn from a Poisson distribution with a mean of \\(\bar{y}\\).
 It's also important to note that the log-likelihood is always negative.
 Since the likelihood is a probability that ranges from 0 to 1, the log of it will always be negative.
