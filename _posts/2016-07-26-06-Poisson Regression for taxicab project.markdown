@@ -9,13 +9,13 @@ header:
 category: DataScience
 tags: [data science, nyc, taxis, technical]
 ---
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
-
 
 *In [my last post]({% post_url 2016-03-16-06-Do Rich People Take More Taxis %}), I gave an overview of my model for the location of taxi cab drop offs in NYC.
 The Poisson regression used in that model isn't the most common, and there aren't a lot of internet resources on the technique it uses, Poisson regression.
 I think that this taxi cab data provides a decent example to explain Poisson regression, so I'm going to try to explain how Poisson regression works, and how it can be used to understand this data.*
+
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>-->
 
 
 ## A Recap
