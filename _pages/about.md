@@ -1,4 +1,5 @@
 ---
+layout: single
 title: About
 permalink: /about/
 excerpt: Data Scientist - Physicist - Bicycle Tourist
