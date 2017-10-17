@@ -25,7 +25,10 @@ Because there are few taxis, critics say that they can get away with only servin
 
 As a New Yorker who has spent my fair share of time waiting in taxi traffic on my bicycle, I wanted to get some understanding about this issue. Are taxis actually unfair, as critics claim?
 
-<iframe width="100%" height="520" frameborder="0" src="https://thomasproctor.carto.com/viz/9b07d6aa-3d0c-487e-9dbd-06a0645c890e/embed_map?zoom=3&center_lat=0&center_lon=0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<!--
+<iframe width="100%" height="520" frameborder="0" src="https://thomasproctor.carto.com/viz/9b07d6aa-3d0c-487e-9dbd-06a0645c890e/embed_map?zoom=7&center_lat=40.717449&center_lon=-73.956368" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+-->
+<iframe width="100%" height="520" frameborder="0" src="https://thomasproctor.carto.com/builder/9b07d6aa-3d0c-487e-9dbd-06a0645c890e/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 *Each colored polygon represents a census tract, with it's color corresponding to the number of taxi cab drop offs that occurred within it in 2013.*
 
 # Methodology
