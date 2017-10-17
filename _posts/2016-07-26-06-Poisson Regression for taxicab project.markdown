@@ -42,7 +42,7 @@ As it will assume the data have a Poisson distribution about the mean, it's call
 ## Building Poisson Regression from the Distribution Up
 
 In order to build this regression method, we'll start with what we know: the Poisson distribution probability density function:
-$$p(y,\lambda) = \frac{\lambda^y e^{-\lambda}}{y !},$$
+\\[p(y,\lambda) = \frac{\lambda^y e^{-\lambda}}{y !},\\]
 where \\(y\\) is the sample, and \\(\lambda\\) is the mean.
 For our model, we're going to assume that the mean is some function of the independent variables \\(\mathbf{x}\\) and the parameters that we're going to fit, \\(\boldsymbol{\theta}\\).
 Using this, the probability of finding the data point \\( y_i \\) given values for the independent variables \\(\mathbf{x}_i\\) is
