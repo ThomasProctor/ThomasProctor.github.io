@@ -5,7 +5,7 @@ excerpt: How Poisson regression works, and how it can be used to understand taxi
 header:
   overlay_image: img/2taxis_NYC.jpg
   overlay_filter: rgba(0, 0, 0, 0.6)
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  caption: "Photo credit: [**Andrew Ruiz**](https://commons.wikimedia.org/wiki/File:2taxis@NYC.jpg)"
   teaser: img/2taxis_NYC.jpg
 category: DataScience
 tags: [data science, nyc, taxis, technical]
