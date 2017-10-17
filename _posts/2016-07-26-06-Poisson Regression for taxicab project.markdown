@@ -103,7 +103,7 @@ D(y, \lambda\left(\mathbf{x}\_i,\boldsymbol{\theta}\right))) = 2 l(y,y) - 2 l (y
 This is called the *deviance*. Conceptually, it represents a sort of distance between the perfect model and the model we're testing.
 It also will be drawn from a \\(\chi^2\\) distribution and we can derive p-values from it.
 
-For the model I created of the taxi cabs, we find a deviance of \\(2 \times 10^8\\[, which gives a p-value of 0.
+For the model I created of the taxi cabs, we find a deviance of \\(2 \times 10^8\\), which gives a p-value of 0.
 Note that this p-value is a bit different from the most common set up. Since the perfect model is the more complex of the two models, our model is in the place of the null hypothesis.
 This seems pretty disastrous for our model.
 
