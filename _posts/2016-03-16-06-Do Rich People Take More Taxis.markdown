@@ -4,7 +4,7 @@ date:   2016-03-16 15:08:10 -0500
 excerpt: As a New Yorker who has spent my fair share of time waiting in taxi traffic on my bicycle, I wanted to get some understanding about where taxis go and who uses them. Are taxis actually unfair, as critics claim?
 header:
   overlay_image: img/2-Life-of-Pix-free-stock-photos-NY-taxi-city-downton-yellow-leeroy.jpg
-  overlay_filter: rgba(0, 0, 0, 0.6)
+  #overlay_filter: rgba(0, 0, 0, 0.6)
   teaser: img/2-Life-of-Pix-free-stock-photos-NY-taxi-city-downton-yellow-leeroy.jpg
 category: DataScience
 tags: [data science, nyc, taxis, non technical]

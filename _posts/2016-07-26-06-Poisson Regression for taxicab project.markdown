@@ -4,7 +4,7 @@ date:   2016-07-26 15:08:10 -0500
 excerpt: How Poisson regression works, and how it can be used to understand taxi drop-offs.
 header:
   overlay_image: img/2taxis_NYC.jpg
-  overlay_filter: rgba(0, 0, 0, 0.6)
+  #overlay_filter: rgba(0, 0, 0, 0.6)
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
   teaser: img/2taxis_NYC.jpg
 category: DataScience
