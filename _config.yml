@@ -212,6 +212,8 @@ defaults:
       comments: true
       share: true
       related: true
+      header:
+        overlay_filter: rgba(0, 0, 0, 0.5)
   # _pages
   - scope:
       path: ""
