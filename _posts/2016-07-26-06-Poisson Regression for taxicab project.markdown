@@ -45,7 +45,7 @@ In order to build this regression method, we'll start with what we know: the Poi
 \\[p(y,\lambda) = \frac{\lambda^y e^{-\lambda}}{y !},\\]
 where \\(y\\) is the sample, and \\(\lambda\\) is the mean.
 For our model, we're going to assume that the mean is some function of the independent variables \\(\mathbf{x}\\) and the parameters that we're going to fit, \\(\boldsymbol{\theta}\\).
-Using this, the probability of finding the data point \\( y_i \\) given values for the independent variables \\(\mathbf{x}\_i\\) is
+Using this, the probability of finding the data point \\( y\_i \\) given values for the independent variables \\(\mathbf{x}\_i\\) is
 \\[p\left(y_i|\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)\right) = \frac{\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)^{y_i} e^{-\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)}}{y_i !}\\]
 Then, the probability of getting all the data is just the product of all the data probabilities multiplied together.
 \\[L(y_i,\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)) = \prod_{i=0}^N \frac{\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)^{y_i} e^{-\lambda\left(\mathbf{x}_i,\boldsymbol{\theta}\right)}}{y_i !}\\]
