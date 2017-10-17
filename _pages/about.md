@@ -1,8 +1,8 @@
 ---
-layout: single
 title: About
 permalink: /about/
 excerpt: Data Scientist - Physicist - Bicycle Tourist
+author_profile: true
 ---
 
 {% include base_path %}
