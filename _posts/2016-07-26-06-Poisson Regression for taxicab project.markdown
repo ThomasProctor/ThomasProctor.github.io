@@ -3,7 +3,7 @@ title:  "Poisson Regression on Taxi Drop Offs"
 date:   2016-07-26 15:08:10 -0500
 header:
   overlay_image: img/2taxis_NYC.jpg
-  excerpt: 
+  excerpt: ""
 category: DataScience
 tags: [data science, nyc, taxis, technical]
 ---
