@@ -5,14 +5,14 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Thomas Chapman Proctor"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Thomas Chapman Proctor"
+description              : "Data Scientist - Physicist - Bicycle Tourist"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -83,10 +83,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Thomas Chapman Proctor"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              : "Data Scientist - Physicist - Bicycle Tourist"
+  location         : "New York City"
   email            :
   uri              :
   bitbucket        :
