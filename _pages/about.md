@@ -1,8 +1,11 @@
 ---
+layout: single
 title: About
 permalink: /about/
 excerpt: Data Scientist - Physicist - Bicycle Tourist
 ---
+
+{% include base_path %}
 
 Thomas Proctor is a freelance data scientist. He spends most of his time exploring the world's data.
 He hopes it can tell him something useful.
