@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Do Rich People Take More Taxis?"
 date:   2016-03-16 15:08:10 -0500
 image: img/2-Life-of-Pix-free-stock-photos-NY-taxi-city-downton-yellow-leeroy.jpg
