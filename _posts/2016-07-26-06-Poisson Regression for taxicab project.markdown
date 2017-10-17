@@ -125,16 +125,16 @@ Instead, we create a model that doesn't have a real distribution behind it at al
 It's just something that looks a lot like a Poisson regression, except for the larger variance.
 This is done by modifying the log-likelihood that we created for Poisson regression.
 The log-likelihood we create - called a *quasi-log-likelihood* - is
-\\]
-l(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right)) = \sum\_{i=0}^N \frac{y\_i \log(\lambda\left(\mathbf{x}\_i,\boldsymbol{\theta}\right)) - \lambda\left(\mathbf{x}\_i,\boldsymbol{\theta}\right)}{\sigma^2}
 \\[
+l(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right)) = \sum\_{i=0}^N \frac{y\_i \log(\lambda\left(\mathbf{x}\_i,\boldsymbol{\theta}\right)) - \lambda\left(\mathbf{x}\_i,\boldsymbol{\theta}\right)}{\sigma^2}
+\\]
 \\(\sigma^2\\) is the factor by which our variance is increased, called the *dispersion parameter*.
 This model is called a *quasi-Poisson regression*.
 If you compare this quasi-log-likelihood to the true Poisson regression log-likelihood, you'll notice that they're pretty similar.
 As far as finding the parameters \\(\boldsymbol{\theta}\\) go, they are identical, as for both,
-\\]
-\frac{\partial l(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right))}{\partial \boldsymbol{\theta}} = \mathbf{0} \implies \sum\_{i=0}^N \left[ \frac{y\_i}{\lambda\left(\mathbf{x}\_i,\boldsymbol{\theta}\right)} - 1 \right] \frac{\partial \lambda\left(\mathbf{x}\_i,\boldsymbol{\theta}\right)}{\partial \boldsymbol{\theta}} = \mathbf{0}.
 \\[
+\frac{\partial l(y,\lambda\left(\mathbf{x},\boldsymbol{\theta}\right))}{\partial \boldsymbol{\theta}} = \mathbf{0} \implies \sum\_{i=0}^N \left[ \frac{y\_i}{\lambda\left(\mathbf{x}\_i,\boldsymbol{\theta}\right)} - 1 \right] \frac{\partial \lambda\left(\mathbf{x}\_i,\boldsymbol{\theta}\right)}{\partial \boldsymbol{\theta}} = \mathbf{0}.
+\\]
 
 Thus, the model for the mean will be identical for both models.
 However, with a scaling factor on the log-likelihood, the random part of the quasi-Poisson model has a larger variance than the ordinary Poisson, so things like p-values and the confidence intervals will be changed.
