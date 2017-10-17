@@ -156,7 +156,7 @@ But we can't do the same with a Poisson distribution.
 Since the Poisson distribution changes with the mean, each residual is drawn from a different distribution.
 We can get around this by transforming the residuals such that they should follow a normal distribution, if they actually are following our model.
 For Poisson regression, these *Anscombe residuals* are given by
-\\]
+\\[
 r\_A = \frac{3\left(y^{2/3} - \lambda ^{2/3}\right)}{2\lambda^{1/6}}.
 \\]
 ![QQ-plot]({{ "img/2013quasi-poisson_QQ.png" | absolute_url }})
