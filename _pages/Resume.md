@@ -27,7 +27,7 @@ Dec. 2016 -- Feb. 2017
 
 -   Built out data pipeline to evaluate credit-worthiness of businesses.
 
--   Scraped \~200GB of data from government websites using Requests,
+-   Scraped ~200GB of data from government websites using Requests,
     Beautiful Soup, and Selenium, and processed irregular HTML files
     into clean JSON.
 
@@ -110,11 +110,11 @@ Nov. 2015 -- Apr. 2016
     Spark, logistic regression, K-means clustering, backpropogated
     neural networks, PCA, mySQL, among others.
 
-Ph.D.,~Physics -- CUNY Graduate Center
+Ph.D., Physics -- CUNY Graduate Center
 --------------------------------------
 Aug. 2010 -- Sept. 2015
 
-B.A.,~Physics -- Reed College
+B.A., Physics -- Reed College
 -----------------------------
 Aug. 2005 -- May 2009
 
