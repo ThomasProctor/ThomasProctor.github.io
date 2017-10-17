@@ -124,7 +124,7 @@ Aug. 2005 -- May 2009
 
 Skills
 ======
-**Programming Languages**:*Primary*: Python,  Mathematica, PostgreSQL, Linux+Bash. *Limited Knowledge*: R
+**Programming Languages**: *Primary*: Python,  Mathematica, PostgreSQL, Linux+Bash. *Limited Knowledge*: R
 
 **Data Analysis**: Machine learning, regression and classification decision trees, ensemble methods such as gradient boosting, GLMs, partial and ordinary differential equations. Expert in combining analytic math with big data to understand complex systems.
 
