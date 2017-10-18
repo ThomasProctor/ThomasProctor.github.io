@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2017 Michael Rose
+Copyright (c) 2017 Thomas Chapman Proctor
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,6 +19,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Minimal Mistakes is Copyright (c) 2017 Michael Rose.
 
 Minimal Mistakes incorporates icons from [The Noun Project](https://thenounproject.com/)
 creators Garrett Knoll, Arthur Shlain, and tracy tam.
