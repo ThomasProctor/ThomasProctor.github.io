@@ -84,7 +84,7 @@ analytics:
 # Site Author
 author:
   name             : "Thomas Chapman Proctor"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /img/TCProctor_cropped.png
   bio              : "Data Scientist - Physicist - Bicycle Tourist"
   location         : "New York City"
   email            : t.c.proctor.data@gmail.com
