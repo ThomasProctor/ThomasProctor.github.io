@@ -128,4 +128,4 @@ Skills
 
 **Data Analysis**: Machine learning, regression and classification decision trees, ensemble methods such as gradient boosting, GLMs, partial and ordinary differential equations. Expert in combining analytic math with big data to understand complex systems.
 
-**Fun Fact**:Bicycled across Spain, Peru, Ecuador, Washington, and New England on self-planned trips.
+**Fun Fact**: Bicycled across Spain, Peru, Ecuador, Washington, and New England on self-planned trips.
