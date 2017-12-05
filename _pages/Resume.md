@@ -11,7 +11,7 @@ Research and Professional Experience
 
 Freelance Data Scientist
 ---------------------
-Feb. 2017 -- Present
+May 2016 -- Present
 
 -   Built algorithm for natural language processing of job postings.
 
