@@ -32,7 +32,7 @@ The most familiar part is the prediction for the mean.
 This is the predicted line that we can plot.
 The second part is the "random part" of the model.
 The model expects that the mean will not perfectly predict all the data.
-While ordinary least squares doesn't necessarily choose a specific distribution, it does assume that the *variance is constant*<sup id="constant_var">[1](#f1)</sup>.
+While ordinary least squares doesn't necessarily choose a specific distribution, it does assume that the *variance is constant*<sup id="constant_var">[1](#f1)<a name=constant_var></a></sup>.
 
 
 However, for our taxi cab data, this is not the case.
@@ -205,4 +205,4 @@ It's called *Generalized Linear Models*, by McCullagh and Nelder. It's been arou
 
 -----------------------------------------------------
 
-<a name="f1">1</a> Most derivations of ordinary least squares don't assume any specific distribution. Using the maximum likelihood method that I described here, you could create a linear regression model that assumes a normal distribution of the residuals. This model will be equivalent to ordinary least squares. In fact, if you create a regression model with *any* distribution with constant variance, you will end up with ordinary least squares. [^](#constant_var)
+<a name="f1">1</a> Most derivations of ordinary least squares don't assume any specific distribution. Using the maximum likelihood method that I described here, you could create a linear regression model that assumes a normal distribution of the residuals. This model will be equivalent to ordinary least squares. In fact, if you create a regression model with *any* distribution with constant variance, you will end up with ordinary least squares.<sup id="constant_var">[^](#constant_var)</sup>
