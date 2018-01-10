@@ -205,4 +205,4 @@ It's called *Generalized Linear Models*, by McCullagh and Nelder. It's been arou
 
 -----------------------------------------------------
 
-<a name="f1">1</a> Most derivations of ordinary least squares don't assume any specific distribution. Using the maximum likelihood method that I described here, you could create a linear regression model that assumes a normal distribution of the residuals. This model will be equivalent to ordinary least squares. In fact, if you create a regression model with *any* distribution with constant variance, you will end up with ordinary least squares.<sup>[^](#other_lang)</sup>
+<a name="f1">1</a> Most derivations of ordinary least squares don't assume any specific distribution. Using the maximum likelihood method that I described here, you could create a linear regression model that assumes a normal distribution of the residuals. This model will be equivalent to ordinary least squares. In fact, if you create a regression model with *any* distribution with constant variance, you will end up with ordinary least squares.[^](#other_lang)
