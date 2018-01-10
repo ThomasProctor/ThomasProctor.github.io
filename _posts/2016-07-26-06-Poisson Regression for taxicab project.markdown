@@ -32,7 +32,7 @@ The most familiar part is the prediction for the mean.
 This is the predicted line that we can plot.
 The second part is the "random part" of the model.
 The model expects that the mean will not perfectly predict all the data.
-While ordinary least squares doesn't necessarily choose a specific distribution, it does assume that the *variance is constant*<sup id="constant_var" name="other_lang">[1](#f1)</sup>.
+While ordinary least squares doesn't necessarily choose a specific distribution, it does assume that the *variance is constant*<sup id="constant_var" name="other_lang">[1](#f1)</sup>.[^1]
 
 
 However, for our taxi cab data, this is not the case.
