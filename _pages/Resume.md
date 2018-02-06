@@ -13,9 +13,15 @@ Freelance Data Scientist
 ---------------------
 May 2016 -- Present
 
+-   Diverse projects for six different clients.
+
+-   Currently working on long-term projects with IAG Energy and Cleared Careers.
+
+-    Grouped NYC buildings by owners based on addresses scraped from PDFs, as well as dozens of other address sources.
+
 -   Built algorithm for natural language processing of job postings.
 
--   Built modular library allowing quick project development and easy
+-   Built modular libraries for quick project development and easy
     maintenance.
 
 -   Deployed scraping programs for long term usage on AWS using Docker
