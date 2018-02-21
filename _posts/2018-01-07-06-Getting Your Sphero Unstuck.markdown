@@ -20,7 +20,7 @@ mostly only responsible for sensors, bluetooth communication, and some basic tas
 like staying upright.
 
 It can be programmed via a stripped down javascript interface
-<sup id="other_lang" name="other_lang">[1](#f1)<a name=constant_var></a></sup>. I thought I
+<sup id="other_lang" name="other_lang">[1](#f1)</sup>. I thought I
 might be able to make a halfway decent toy for my cat to play with while we're
 at work. I thought I'd start with a program that would just go straight until it
 hit something, turn around in a random direction, and repeat.
@@ -35,7 +35,7 @@ That video shows typical behavior.
 The robot will hit a wall and just keep going, completely oblivious to the fact that it hit a wall.
 Since I couldn't find a way to modify the way collisions were detected, I had to come up with a way to do it myself.
 The key thing I noticed was that the robot rocked back and forth when stuck
-<sup id="constant_var">[2](#f2)<a name=constant_var></a></sup>.
+<sup id="constant_var">[2](#f2)</sup>.
 I collected a stream of data from the robot while it was moving normally and while it was stuck.
 I first looked at the pitch,the angle the robot makes with the horizontal along the direction of its travel.
 You can see a comparison of the pitch while rolling and while stuck in the figure below.
@@ -44,7 +44,7 @@ You can clearly see the oscillation in the plot that you can see in the video.
 However, it might be hard to detect that reliably.
 The robot does the same thing while rolling, rocking back and forth, just not quite as fast and consistently.
 
-Instead, I looked at the rotational velocity of the robot - i.e. the first derivative of the pitch<sup id="constant_var">[3](#f3)<a name=constant_var></a></sup>.
+Instead, I looked at the rotational velocity of the robot - i.e. the first derivative of the pitch<sup id="constant_var">[3](#f3)</a></sup>.
 This was more useful because the amplitude of oscillation was much much greater when stuck than when rolling normally.
 Looking at the plot of the rotational velocity of the pitch, as seen in the figure below, we can also see that the frequency of oscillation when stuck is quite high.
 ![Pitch change over time, rolling and stuck]({{ "img/pitch_change_per_second.png" | absolute_url }})
@@ -63,7 +63,7 @@ I wrote some code that will continuously monitor the standard deviation.
 If the standard deviation goes above a certain value for a certain time period, it will turn the robot around.
 
 For being pretty rudimentary, it actually works pretty well.
-I found that I could pretty much eliminate the chance of "false positives" - turning around when the robot is not actually stuck<sup id="constant_var">[4](#f4)<a name=constant_var></a></sup>.
+I found that I could pretty much eliminate the chance of "false positives" - turning around when the robot is not actually stuck<sup id="constant_var">[4](#f4)</sup>.
 It can take a while for the robot to realize that it's stuck, but it reliably will eventually.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHHSTQb8eMs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -77,6 +77,7 @@ However, it didn't seem to complement the standard deviation well, only detectin
 
 
 
+--------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
 <a name="f1">1</a> The interface I've been forced to use is the one provided by
