@@ -94,7 +94,7 @@ compiled language would make finding syntax errors faster, and having a real
 linear algebra package (or any package for that matter - Sphero Edu doesn't
 allow npm imports) available would make the code much easier to write.*
 
-<a name="f2">2</a> *I'm not entirely sure why this oscillation happens, but I have a guess.
+<a name="f2">2</a>  *I'm not entirely sure why this oscillation happens, but I have a guess.
 A Sphero works sort of like a hamster in a hamster ball.
 The robot itself sits in a spherical shell, like the hamster's ball.
 It moves forward by turning the spherical shell with wheels that rest against it.
@@ -102,9 +102,9 @@ The robot inside the shell is weighted such that it will normally sit upright, a
 When the robot is hitting a wall however, the outer shell can't rotate.
 Like a hamster trying to run inside a ball that won't turn, the robot instead moves up the side of the ball.
 It realizes that its flipping over, and turns of the motor to right itself.
-Once it has righted itself, it repeats the process, creating the oscillation.
+Once it has righted itself, it repeats the process, creating the oscillation.*
 
-I'm actually quite unsure about this explanation.
+*I'm actually quite unsure about this explanation.
 It might be very wrong.
 The period of oscillation is about 0.05 seconds.
 At 20Hz, this is right on the edge of something we'd hear as sound.
