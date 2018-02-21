@@ -44,7 +44,7 @@ You can clearly see the oscillation in the plot that you can see in the video.
 However, it might be hard to detect that reliably.
 The robot does the same thing while rolling, rocking back and forth, just not quite as fast and consistently.
 
-Instead, I looked at the rotational velocity of the robot - i.e. the first derivative of the pitch.<sup id="constant_var">[3](#f3)</a></sup>
+Instead, I looked at the rotational velocity of the robot - i.e. the first derivative of the pitch.<sup id="constant_var">[3](#f3)</sup>
 This was more useful because the amplitude of oscillation was much much greater when stuck than when rolling normally.
 Looking at the plot of the rotational velocity of the pitch, as seen in the figure below, we can also see that the frequency of oscillation when stuck is quite high.
 ![Pitch change over time, rolling and stuck]({{ "img/pitch_change_per_second.png" | absolute_url }})
