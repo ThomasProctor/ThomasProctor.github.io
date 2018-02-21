@@ -1,7 +1,7 @@
 ---
 title:  "Getting your Sphero unstuck."
 date:   2018-01-07 15:08:10 -0500
-excerpt: Kludging Sphero collision detection.
+excerpt: The Sphero Mini's collision detection doesn't really work. I came up with a kludge.
 header:
   overlay_image:
   overlay_filter: rgba(0, 0, 0, 0.6)
