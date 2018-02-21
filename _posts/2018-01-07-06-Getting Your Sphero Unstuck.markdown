@@ -80,7 +80,7 @@ However, it didn't seem to complement the standard deviation well, only detectin
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 
-<a name="f1">1</a> The interface I've been forced to use is the one provided by
+<a name="f1">1</a> *The interface I've been forced to use is the one provided by
 Sphero Edu. There are other interfaces available for other Sphero robots.
 However, the Sphero Mini is new, and it looks like no one has released anything
 else. I personally can't wait for other options. JavaScript is probably the last
@@ -92,9 +92,9 @@ start the process over again. I'm especially looking forward to [the Go robotics
 framework](https://github.com/hybridgroup/gobot/issues/474). Writing in a
 compiled language would make finding syntax errors faster, and having a real
 linear algebra package (or any package for that matter - Sphero Edu doesn't
-allow npm imports) available would make the code much easier to write.
+allow npm imports) available would make the code much easier to write.*
 
-<a name="f2">2</a> I'm not entirely sure why this oscillation happens, but I have a guess.
+<a name="f2">2</a> *I'm not entirely sure why this oscillation happens, but I have a guess.
 A Sphero works sort of like a hamster in a hamster ball.
 The robot itself sits in a spherical shell, like the hamster's ball.
 It moves forward by turning the spherical shell with wheels that rest against it.
@@ -112,14 +112,14 @@ I doubt the robot would vibrate this fast if the cause is overcompensating while
 The robot would have to observe itself falling over and change its what it's doing too fast for this to be the cause.
 In defense of this explanation is the observation that the 0.05 second period is about the same as the sampling rate of the data.
 Because it is interacting with the phone over bluetooth, is about 0.05 seconds.
-If the oscillation is being caused by flaws in the algorithm for keeping the robot upright, it might have a period of about the one we observe.
+If the oscillation is being caused by flaws in the algorithm for keeping the robot upright, it might have a period of about the one we observe.*
 
 <a name="f3">3</a>
-This might be a little confusing, since the robot looks like it's a rolling ball.
+*This might be a little confusing, since the robot looks like it's a rolling ball.
 However, actually it is just the outer shell of the robot that rolls when the robot moves.
-The actual robot itself inside the shell tends to stay at a pretty constant orientation while the shell rolls.
+The actual robot itself inside the shell tends to stay at a pretty constant orientation while the shell rolls.*
 
 <a name="f4">4</a>
-I found that I could really eliminate the false positives by reading the standard deviation in pre-determined chunks instead of continuously.
+*I found that I could really eliminate the false positives by reading the standard deviation in pre-determined chunks instead of continuously.
 It often takes much longer than the chunk time - I found 3 seconds worked pretty well - to turn around when stuck.
-However, the probability of a false positive is much lower than if the standard deviation is *continuously* monitored, as a false positive standard deviation would have to fit inside a pre-determined chunk, not *any* 3 second period.
+However, the probability of a false positive is much lower than if the standard deviation is **continuously** monitored, as a false positive standard deviation would have to fit inside a pre-determined chunk, not **any** 3 second period.*
