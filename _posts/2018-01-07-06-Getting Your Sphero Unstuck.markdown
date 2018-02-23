@@ -37,7 +37,7 @@ The robot will hit a wall and just keep going, completely oblivious to the fact 
 
 Since I couldn't find a way to modify the way collisions were detected, I had to come up with a way to do it myself.
 The key thing I noticed was that the robot rocked back and forth when stuck
-.<sup id="constant_var">[2](#f2)</sup>
+.<sup id="s2">[2](#f2)</sup>
 I collected a stream of data from the robot while it was moving normally and while it was stuck.
 I first looked at the pitch,the angle the robot makes with the horizontal along the direction of its travel.
 You can see a comparison of the pitch while rolling and while stuck in the figure below.
@@ -46,7 +46,7 @@ You can clearly see the oscillation in the plot that you can see in the video.
 However, it might be hard to detect that reliably.
 The robot does the same thing while rolling, rocking back and forth, just not quite as fast and consistently.
 
-Instead, I looked at the rotational velocity of the robot - i.e. the first derivative of the pitch.<sup id="constant_var">[3](#f3)</sup>
+Instead, I looked at the rotational velocity of the robot - i.e. the first derivative of the pitch.<sup id="s3">[3](#f3)</sup>
 This was more useful because the amplitude of oscillation was much much greater when stuck than when rolling normally.
 Looking at the plot of the rotational velocity of the pitch, as seen in the figure below, we can also see that the frequency of oscillation when stuck is quite high.
 ![Pitch change over time, rolling and stuck]({{ "img/pitch_change_per_second.png" | absolute_url }})
@@ -65,7 +65,7 @@ I wrote some code that will continuously monitor the standard deviation.
 If the standard deviation goes above a certain value for a certain time period, it will turn the robot around.
 
 For being pretty rudimentary, it actually works pretty well.
-I found that I could pretty much eliminate the chance of "false positives" - turning around when the robot is not actually stuck.<sup id="constant_var">[4](#f4)</sup>
+I found that I could pretty much eliminate the chance of "false positives" - turning around when the robot is not actually stuck.<sup id="s4">[4](#f4)</sup>
 It can take a while for the robot to realize that it's stuck, but it reliably will eventually.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHHSTQb8eMs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -96,7 +96,7 @@ compiled language would make finding syntax errors faster, and having a real
 linear algebra package (or any package for that matter - Sphero Edu doesn't
 allow npm imports) available would make the code much easier to write.<a href="#s1">^</a></small>
 
-<a name="f2">2</a>  <small>I'm not entirely sure why this oscillation happens, but I have a guess.
+<small><a name="f2">2</a>  I'm not entirely sure why this oscillation happens, but I have a guess.
 A Sphero works sort of like a hamster in a hamster ball.
 The robot itself sits in a spherical shell, like the hamster's ball.
 It moves forward by turning the spherical shell with wheels that rest against it.
@@ -114,15 +114,15 @@ I doubt the robot would vibrate this fast if the cause is overcompensating while
 The robot would have to observe itself falling over and change its what it's doing too fast for this to be the cause.
 In defense of this explanation is the observation that the 0.05 second period is about the same as the sampling rate of the data.
 Because it is interacting with the phone over bluetooth, is about 0.05 seconds.
-If the oscillation is being caused by flaws in the algorithm for keeping the robot upright, it might have a period of about the one we observe.</small>
+If the oscillation is being caused by flaws in the algorithm for keeping the robot upright, it might have a period of about the one we observe.<a href="#s2">^</a></small>
 
-<a name="f3">3</a>
-<small>This might be a little confusing, since the robot looks like it's a rolling ball.
+<small><a name="f3">3</a>
+This might be a little confusing, since the robot looks like it's a rolling ball.
 However, actually it is just the outer shell of the robot that rolls when the robot moves.
-The actual robot itself inside the shell tends to stay at a pretty constant orientation while the shell rolls.</small>
+The actual robot itself inside the shell tends to stay at a pretty constant orientation while the shell rolls.<a href="#s3">^</a></small>
 
-<a name="f4">4</a>
-<small>I found that I could really eliminate the false positives by reading the standard deviation in pre-determined chunks instead of continuously.
+<small><a name="f4">4</a>
+I found that I could really eliminate the false positives by reading the standard deviation in pre-determined chunks instead of continuously.
 It often takes much longer than the chunk time - I found 3 seconds worked pretty well - to turn around when stuck.
 However, the probability of a false positive is much lower than if the standard deviation is *continuously* monitored, as a false positive standard deviation would have to fit inside a pre-determined chunk, not *any* 3 second period.
-</small>
+<a href="#s4">^</a></small>
