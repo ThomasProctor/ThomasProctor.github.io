@@ -113,7 +113,7 @@ At 20Hz, this is right on the edge of something we'd hear as sound.
 I doubt the robot would vibrate this fast if the cause is overcompensating while trying to keep itself upright.
 The robot would have to observe itself falling over and change its what it's doing too fast for this to be the cause.
 In defense of this explanation is the observation that the 0.05 second period is about the same as the sampling rate of the data.
-Because it is interacting with the phone over bluetooth, is about 0.05 seconds.
+Because it is interacting with the phone over bluetooth, the sampling rate is about 0.05 seconds.
 If the oscillation is being caused by flaws in the algorithm for keeping the robot upright, it might have a period of about the one we observe.<a href="#s2">^</a></small>
 
 <small><a name="f3">3</a>
