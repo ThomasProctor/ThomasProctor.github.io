@@ -3,10 +3,10 @@ title:  "Getting your Sphero unstuck."
 date:   2018-01-07 15:08:10 -0500
 excerpt: The Sphero Mini's collision detection doesn't really work. I came up with a kludge.
 header:
-  overlay_image:
+  overlay_image: img/SpheroPhoto-1024x.jpg
   overlay_filter: rgba(0, 0, 0, 0.6)
-  caption:
-  teaser:
+  caption: "© 2018 T. C. Proctor"
+  teaser: img/SpheroPhoto-1024x.jpg
 category: DataScience
 tags: [data science, robots, Sphero]
 ---
@@ -33,6 +33,8 @@ Here's a sad video of that happening:
 
 That video shows typical behavior.
 The robot will hit a wall and just keep going, completely oblivious to the fact that it hit a wall.
+
+
 Since I couldn't find a way to modify the way collisions were detected, I had to come up with a way to do it myself.
 The key thing I noticed was that the robot rocked back and forth when stuck
 .<sup id="constant_var">[2](#f2)</sup>
