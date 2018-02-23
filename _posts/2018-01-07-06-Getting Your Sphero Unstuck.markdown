@@ -6,7 +6,7 @@ header:
   overlay_image: img/SpheroPhoto-1024x.jpg
   overlay_filter: rgba(0, 0, 0, 0.6)
   caption: "© 2018 T. C. Proctor"
-  teaser: img/SpheroPhoto-1024x.jpg
+  teaser: img/SpheroPhoto-cropped-preview.jpg
 category: DataScience
 tags: [data science, robots, Sphero]
 ---
