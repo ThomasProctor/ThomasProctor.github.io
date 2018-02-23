@@ -31,7 +31,7 @@ Here's a sad video of that happening:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9pV7IMtzdjs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-That video shows typical behavior.
+That video shows typical behavior, running [code that is mostly copied straight out of the documentation](https://github.com/ThomasProctor/ThomasProctor.github.io/blob/master/code/standard_collision_detection.js).
 The robot will hit a wall and just keep going, completely oblivious to the fact that it hit a wall.
 
 
@@ -61,7 +61,7 @@ Meanwhile, the stuck version has a much wider distribution of rotational velocit
 I figured I could capture this behavior by looking at the standard deviation of the rotational velocity.
 This is a measure of how "spread out" the histogram of the data is.
 
-I wrote some code that will continuously monitor the standard deviation.
+I wrote [some code](https://github.com/ThomasProctor/ThomasProctor.github.io/blob/master/code/pitch_std_collision_detection.js) that will continuously monitor the standard deviation.
 If the standard deviation goes above a certain value for a certain time period, it will turn the robot around.
 
 For being pretty rudimentary, it actually works pretty well.
@@ -70,7 +70,7 @@ It can take a while for the robot to realize that it's stuck, but it reliably wi
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LHHSTQb8eMs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-This program manages to bounce around the room pretty well, but it is far from perfect.
+[This program](https://github.com/ThomasProctor/ThomasProctor.github.io/blob/master/code/pitch_std_collision_detection.js) manages to bounce around the room pretty well, but it is far from perfect.
 I'd like to be able to reduce the amount of time the robot takes to realize that it's stuck.
 I've tried something that looked at the frequency of the oscillation by looking at the Fourier transform.
 However, it didn't seem to complement the standard deviation well, only detecting that the robot was stuck in cases where the standard deviation measure already realized it.
@@ -80,7 +80,7 @@ However, it didn't seem to complement the standard deviation well, only detectin
 
 
 --------------------------------------------------------------------------------
---------------------------------------------------------------------------------
+
 <small>
 <a name="f1">1</a> The interface I've been forced to use is the one provided by
 Sphero Edu. There are other interfaces available for other Sphero robots.
