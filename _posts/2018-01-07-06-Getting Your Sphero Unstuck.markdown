@@ -22,7 +22,7 @@ like staying upright.
 It can be programmed via a stripped down javascript interface
 .<sup id="s1" name="s1">[1](#f1)</sup> I thought I
 might be able to make a halfway decent toy for my cat to play with while we're
-at work. I thought I'd start with a program that would just go straight until it
+at work. I decided to start with a program that would just go straight until it
 hit something, turn around in a random direction, and repeat.
 
 That was a lot easier said than done. There is a "collision detection" function, but unfortunately, it rarely detects collisions when they happen.
