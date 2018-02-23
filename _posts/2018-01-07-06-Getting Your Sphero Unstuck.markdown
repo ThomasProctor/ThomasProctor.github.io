@@ -94,7 +94,7 @@ start the process over again. I'm especially looking forward to [the Go robotics
 framework](https://github.com/hybridgroup/gobot/issues/474). Writing in a
 compiled language would make finding syntax errors faster, and having a real
 linear algebra package (or any package for that matter - Sphero Edu doesn't
-allow npm imports) available would make the code much easier to write.[^](#s1)</small>
+allow npm imports) available would make the code much easier to write.<a href="#s1">^</a></small>
 
 <a name="f2">2</a>  <small>I'm not entirely sure why this oscillation happens, but I have a guess.
 A Sphero works sort of like a hamster in a hamster ball.
