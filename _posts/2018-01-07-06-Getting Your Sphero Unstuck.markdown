@@ -20,7 +20,7 @@ mostly only responsible for sensors, bluetooth communication, and some basic tas
 like staying upright.
 
 It can be programmed via a stripped down javascript interface
-.<sup id="other_lang" name="other_lang">[1](#f1)</sup> I thought I
+.<sup id="other_lang" name="other_lang">[\[1](#f1)<a name="s1">\]</a></sup> I thought I
 might be able to make a halfway decent toy for my cat to play with while we're
 at work. I thought I'd start with a program that would just go straight until it
 hit something, turn around in a random direction, and repeat.
@@ -94,7 +94,7 @@ start the process over again. I'm especially looking forward to [the Go robotics
 framework](https://github.com/hybridgroup/gobot/issues/474). Writing in a
 compiled language would make finding syntax errors faster, and having a real
 linear algebra package (or any package for that matter - Sphero Edu doesn't
-allow npm imports) available would make the code much easier to write.</small>
+allow npm imports) available would make the code much easier to write.<sup>[^](#s1)</small>
 
 <a name="f2">2</a>  <small>I'm not entirely sure why this oscillation happens, but I have a guess.
 A Sphero works sort of like a hamster in a hamster ball.
