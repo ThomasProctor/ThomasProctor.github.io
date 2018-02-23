@@ -20,7 +20,7 @@ mostly only responsible for sensors, bluetooth communication, and some basic tas
 like staying upright.
 
 It can be programmed via a stripped down javascript interface
-.<sup id="other_lang" name="other_lang">[\[1](#f1)<a name="s1">\]</a></sup> I thought I
+.<sup id="other_lang" name="other_lang">[\[1](#f1)<a name="s1" id="s1">\]</a></sup> I thought I
 might be able to make a halfway decent toy for my cat to play with while we're
 at work. I thought I'd start with a program that would just go straight until it
 hit something, turn around in a random direction, and repeat.
