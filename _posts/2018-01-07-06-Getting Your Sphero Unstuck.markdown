@@ -81,7 +81,7 @@ However, it didn't seem to complement the standard deviation well, only detectin
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-
+<small>
 <a name="f1">1</a> *The interface I've been forced to use is the one provided by
 Sphero Edu. There are other interfaces available for other Sphero robots.
 However, the Sphero Mini is new, and it looks like no one has released anything
@@ -125,3 +125,4 @@ The actual robot itself inside the shell tends to stay at a pretty constant orie
 *I found that I could really eliminate the false positives by reading the standard deviation in pre-determined chunks instead of continuously.
 It often takes much longer than the chunk time - I found 3 seconds worked pretty well - to turn around when stuck.
 However, the probability of a false positive is much lower than if the standard deviation is **continuously** monitored, as a false positive standard deviation would have to fit inside a pre-determined chunk, not **any** 3 second period.*
+</small>
