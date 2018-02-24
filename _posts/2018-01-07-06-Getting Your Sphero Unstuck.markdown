@@ -19,13 +19,21 @@ most of the computation being done on the controlling device. The robot is
 mostly only responsible for sensors, bluetooth communication, and some basic tasks,
 like staying upright.
 
+A Sphero moves sort of like a hamster in a hamster ball.
+The robot itself sits in a spherical shell, like the hamster's ball.
+It moves forward by turning the spherical shell with wheels that rest against it.
+The robot inside the shell is weighted like a [Weeble](https://en.wikipedia.org/wiki/Weeble) such that it will normally sit upright.
+The toy is programmed so that it will try to stay upright as the shell rotates around it.
+If it starts tipping over, the motor will generally turn off automatically until the robot sits upright.
+
 It can be programmed via a stripped down javascript interface
 .<sup id="s1" name="s1">[1](#f1)</sup> I thought I
 might be able to make a halfway decent toy for my cat to play with while we're
 at work. I decided to start with a program that would just go straight until it
 hit something, turn around in a random direction, and repeat.
 
-That was a lot easier said than done. There is a "collision detection" function, but unfortunately, it rarely detects collisions when they happen.
+That was a lot easier said than done.
+There is a "collision detection" function, but unfortunately, it rarely detects collisions when they happen.
 Most of the time, the robot will hit a wall and just keep going into it, oblivious to the collision.
 Here's a sad video of that happening:
 
@@ -76,6 +84,8 @@ I've tried something that looked at the frequency of the oscillation by looking 
 However, it didn't seem to complement the standard deviation well, only detecting that the robot was stuck in cases where the standard deviation measure already realized it.
 
 
+Unfortunately, the Sphero completely failed at my initial goal.
+My cat has no interest in it, no matter how it is moving around.
 
 
 
@@ -94,16 +104,13 @@ start the process over again. I'm especially looking forward to [the Go robotics
 framework](https://github.com/hybridgroup/gobot/issues/474). Writing in a
 compiled language would make finding syntax errors faster, and having a real
 linear algebra package (or any package for that matter - Sphero Edu doesn't
-allow npm imports) available would make the code much easier to write.<a href="#s1">^</a></small>
+allow package imports) available would make the code much easier to write.<a href="#s1">^</a></small>
 
 <small><a name="f2">2</a>  I'm not entirely sure why this oscillation happens, but I have a guess.
-A Sphero works sort of like a hamster in a hamster ball.
-The robot itself sits in a spherical shell, like the hamster's ball.
-It moves forward by turning the spherical shell with wheels that rest against it.
-The robot inside the shell is weighted such that it will normally sit upright, and it will generally try to stay upright.
-When the robot is hitting a wall however, the outer shell can't rotate.
+A Sphero works sort of like a hamster in a hamster ball, moving by rotating the spherical shell it sits inside.
+When the robot is hitting a wall, however, the outer shell can't rotate.
 Like a hamster trying to run inside a ball that won't turn, the robot instead moves up the side of the ball.
-It realizes that its flipping over, and turns of the motor to right itself.
+It realizes that its flipping over, and turns off the motor to right itself.
 Once it has righted itself, it repeats the process, creating the oscillation.</small>
 
 <small>I'm actually quite unsure about this explanation.
