@@ -14,8 +14,6 @@ tags: [data science, nyc, taxis, non technical]
 
 
 
-# Introduction
-
 Because of smartphone apps like Uber, taxi politics have gotten a lot of press lately. One of the claims Uber proponents make is that normal taxis do not serve everybody.
 
 In New York City, taxis are heavily regulated. There are only about 14,000 taxis allowed to pick up passengers off the street in the center of the city. Uber gets around this regulation by only picking up passengers who request a ride on the app.
