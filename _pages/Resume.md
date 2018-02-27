@@ -134,4 +134,6 @@ Skills
 
 **Data Analysis**: Machine learning, regression and classification decision trees, ensemble methods such as gradient boosting, GLMs, partial and ordinary differential equations. Expert in combining analytic math with big data to understand complex systems.
 
+**Actuarial Exams**: Passed Probability (June 2014) and Financial Mathematics (April 2015) Actuarial exams.
+
 **Fun Fact**: Bicycled across Spain, Peru, Ecuador, Washington, and New England on self-planned trips.
