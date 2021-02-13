@@ -15,15 +15,15 @@ White Plains, NY
 
 February 2020 -- February 2021
 
-    - Working for a small startup, built models of CNA job success.
+  - Working for a small startup, built models of CNA job success.
 
-    - Designed model's dependent variables based on client interviews.
+  - Designed model's dependent variables based on client interviews.
 
-    - Imputed demographic data missing from data sources to evaluate fairness of algorithm.
+  - Imputed demographic data missing from data sources to evaluate fairness of algorithm.
 
-    - Worked with web development team to incorporate my code into website backend.
+  - Worked with web development team to incorporate my code into website backend.
 
-    - Worked with web design team to design forms to gather data necessary for model.
+  - Worked with web design team to design forms to gather data necessary for model.
 
 
 
@@ -33,12 +33,12 @@ White Plains, NY
 
 June 2018 -- September 2020
 
-   - Model student success from course data to provide personalized guidance.
-   - Improved model ROC-AUC by 10\%, creating a model that gives useful results.
-   - Implemented propensity score matching to identify causal course relationships.
-   - Designed Docker containers to work effectively with an air-gapped system.
-   - Contribute to product meetings in planning and marketing new product.
-   - Write code in SQL, Java, Python, and R.
+  - Model student success from course data to provide personalized guidance.
+  - Improved model ROC-AUC by 10\%, creating a model that gives useful results.
+  - Implemented propensity score matching to identify causal course relationships.
+  - Designed Docker containers to work effectively with an air-gapped system.
+  - Contribute to product meetings in planning and marketing new product.
+  - Write code in SQL, Java, Python, and R.
 
 
 Freelance Data Scientist
@@ -46,27 +46,24 @@ Freelance Data Scientist
 New York, NY
 May 2016 -- February 2020
 
-   - Diverse projects for six different clients.
+  - Diverse projects for six different clients.
 
-   - Currently working on long-term projects with IAG Energy and Cleared Careers.
+  - Currently working on long-term projects with IAG Energy and Cleared Careers.
 
-   -  Grouped NYC buildings by owners based on addresses scraped from PDFs, as well as dozens of other address sources.
+  -  Grouped NYC buildings by owners based on addresses scraped from PDFs, as well as dozens of other address sources.
 
-   - Built algorithm for natural language processing of job postings.
-   - Built modular libraries for quick project development and easy maintenance.
+  - Built algorithm for natural language processing of job postings.
+  - Built modular libraries for quick project development and easy maintenance.
 
-   - Deployed scraping programs for long term usage on AWS using Docker
-    to allow clients to run my software with minimal IT support.
+  - Deployed scraping programs for long term usage on AWS using Docker to allow clients to run my software with minimal IT support.
 
 Data Scientist -- Scorely
 -------------------------
 Dec. 2016 -- Feb. 2017
 
--   Built out data pipeline to evaluate credit-worthiness of businesses.
+  - Built out data pipeline to evaluate credit-worthiness of businesses.
 
--   Scraped ~200GB of data from government websites using Requests,
-    Beautiful Soup, and Selenium, and processed irregular HTML files
-    into clean JSON.
+  - Scraped ~200GB of data from government websites using Requests, Beautiful Soup, and Selenium, and processed irregular HTML files into clean JSON.
 
 Research Assistant -- CUNY-Lehman College
 -----------------------------------------
