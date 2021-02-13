@@ -8,7 +8,7 @@ author_profile: true
 
 {% include base_path %}
 
-Thomas Proctor is a Sr. data scientist at CredReady, Inc. He spends most of his time exploring the world's data.
+Thomas Proctor is a Sr. Data Scientist at CredReady, Inc. He spends most of his time exploring the world's data.
 He hopes it can tell him something useful.
 
 He got his Ph.D. in physics in 2015.
