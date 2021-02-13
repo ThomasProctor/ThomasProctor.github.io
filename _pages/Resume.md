@@ -34,7 +34,7 @@ White Plains, NY
 June 2018 -- September 2020
 
   - Model student success from course data to provide personalized guidance.
-  - Improved model ROC-AUC by 10\%, creating a model that gives useful results.
+  - Improved model ROC-AUC by 10%, creating a model that gives useful results.
   - Implemented propensity score matching to identify causal course relationships.
   - Designed Docker containers to work effectively with an air-gapped system.
   - Contribute to product meetings in planning and marketing new product.
@@ -44,6 +44,7 @@ June 2018 -- September 2020
 Freelance Data Scientist
 ---------------------
 New York, NY
+
 May 2016 -- February 2020
 
   - Diverse projects for six different clients.
@@ -57,13 +58,6 @@ May 2016 -- February 2020
 
   - Deployed scraping programs for long term usage on AWS using Docker to allow clients to run my software with minimal IT support.
 
-Data Scientist -- Scorely
--------------------------
-Dec. 2016 -- Feb. 2017
-
-  - Built out data pipeline to evaluate credit-worthiness of businesses.
-
-  - Scraped ~200GB of data from government websites using Requests, Beautiful Soup, and Selenium, and processed irregular HTML files into clean JSON.
 
 Research Assistant -- CUNY-Lehman College
 -----------------------------------------
