@@ -9,22 +9,53 @@ author_profile: true
 Research and Professional Experience
 ====================================
 
+Sr. Data Scientist -- CredReady, Inc.
+----------------------------------------
+White Plains, NY
+
+February 2020 -- February 2021
+
+    - Working for a small startup, built models of CNA job success.
+
+    - Designed model's dependent variables based on client interviews.
+
+    - Imputed demographic data missing from data sources to evaluate fairness of algorithm.
+
+    - Worked with web development team to incorporate my code into website backend.
+
+    - Worked with web design team to design forms to gather data necessary for model.
+
+
+
+Data Scientist -- eScholar LLC
+---------------------------------
+White Plains, NY
+
+June 2018 -- September 2020
+
+   - Model student success from course data to provide personalized guidance.
+   - Improved model ROC-AUC by 10\%, creating a model that gives useful results.
+   - Implemented propensity score matching to identify causal course relationships.
+   - Designed Docker containers to work effectively with an air-gapped system.
+   - Contribute to product meetings in planning and marketing new product.
+   - Write code in SQL, Java, Python, and R.
+
+
 Freelance Data Scientist
 ---------------------
-May 2016 -- Present
+New York, NY
+May 2016 -- February 2020
 
--   Diverse projects for six different clients.
+   - Diverse projects for six different clients.
 
--   Currently working on long-term projects with IAG Energy and Cleared Careers.
+   - Currently working on long-term projects with IAG Energy and Cleared Careers.
 
--    Grouped NYC buildings by owners based on addresses scraped from PDFs, as well as dozens of other address sources.
+   -  Grouped NYC buildings by owners based on addresses scraped from PDFs, as well as dozens of other address sources.
 
--   Built algorithm for natural language processing of job postings.
+   - Built algorithm for natural language processing of job postings.
+   - Built modular libraries for quick project development and easy maintenance.
 
--   Built modular libraries for quick project development and easy
-    maintenance.
-
--   Deployed scraping programs for long term usage on AWS using Docker
+   - Deployed scraping programs for long term usage on AWS using Docker
     to allow clients to run my software with minimal IT support.
 
 Data Scientist -- Scorely
